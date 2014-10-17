@@ -1751,6 +1751,7 @@ ul.t-ul2{
 	padding: 0 0 0 28px;
 	line-height: 25px;
 }
+
 .f-title-one{
 	font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
@@ -1759,9 +1760,6 @@ ul.t-ul2{
 	text-transform: uppercase;
 	margin-bottom: 5px;
 }
-
-
-
 
 .title-one, .title-full-one{
 	font-weight: 400;
@@ -1837,7 +1835,7 @@ ul.t-ul2{
 	color: #555555;
 	text-transform:uppercase;
 	font-family: 'Open Sans', sans-serif;
-	background: #fbfbfb;
+	background: #F3F3F3;
 	margin-bottom:10px;
 	}
 	

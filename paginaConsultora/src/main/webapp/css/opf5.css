@@ -65,3 +65,7 @@ label:before {
 .contour-btn30 {
 	line-height: 30px!important;
 }
+
+#condicion_Inscripcion .txtarea .scroll-pane:disabled{
+  -fx-opacity: 1.0;
+}

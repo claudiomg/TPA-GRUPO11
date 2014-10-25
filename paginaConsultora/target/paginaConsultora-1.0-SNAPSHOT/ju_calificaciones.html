@@ -7,15 +7,7 @@
 <head>
         <meta charset="utf-8">
         <title>OPF5</title>
-<!--        <link rel="icon" type="img/ico" href="img/ITR_favicon.ico">
-        <link rel="icon" type="img/ico" href="img/ITR_favicon.html">
-        <meta name="description" content="Con más de 30 años de experiencia, brindamos soluciones integrales en sistemas y el acceso a nuevas tecnologías. Conformamos un equipo de trabajo dinámico con más de 400 profesionales apasionados por proponer y generar soluciones de calidad. Nuestros servicios más destacados: Desarrollos llave en mano, QA y Testing, Monitoreo de aplicaciones, Búsqueda y Selección de profesionales IT, venta de licencias de hardware y software">
-        
-        <meta name="keywords" content="IT Resources, ITR, Daeva, IT, tecnología, staffing de recursos, testing, licencias IBM, web services, software, software factory, consultoría tecnológica, consultoría tecnológica, consultoría de análisis, monitoreo remoto de incidencias, capacitación, desarrollos a medida, desarrollos llave en mano, implementación y migración, implementación y migración, recruiting, búsqueda y selección de personal IT, servicios de calidad, tercerización de testing, tercerización de testing, arquitectura orientada a servicios, SOA, SAP, Java, Java J2EE, Struts, Struts 1 y 2, Spring Framework, Java Server Faces, Hibernate, GWT, FreeMarker, JBPM, Tiles, Velocity, Seam, Drools, Wicket, Ibatis, EJB, Ajax, JMS, Flex, Python, Ruby, PHP, SWT, JDBC, DB2, C++, C#, cobol, ASP, ASP.NET, .NET, oracle, visual basic, mainframe, AS 400, power builder, QA, quality assurance, calidad, CMMI, ISO 9001:2008, analista de sistemas, analista funcional, analista programador, lider de proyecto, project manager, arquitecto, programación, PMO, Optics, Ingenieros,PL/SQL, Analista de procesos, Administrador Jboss, Operador, Soporte Técnico, Operador DataCenter, Drupal, QC, engineer, Operador, Técnico, Supervisor, management, DBA, Coordinador IT, Network Designer, Game Developer, NOC">
-        
-        <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="icon" type="img/ico" href="img/loading.gif">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -82,79 +74,91 @@
             <div class="logo"><img src="img/logos/logo_menu.png" width="70" alt='IT Resources'></div>
                <nav class="menu">
                 <ul id="nav">
-                    <li class="current"><a href="#anchor1">Home</a></li>
+                    <li><a href="#anchor1">Home</a></li>
                     <li><a href="#anchor2">Inscripción</a></li>        
                     <li><a href="#anchor3">Baja</a></li>
                     <li><a href="#anchor5">Nuevo Jugador</a></li>
-                    <li><a href="#anchor6">Calificaciones</a></li>
+                    <li class="current"><a href="#anchor6">Calificaciones</a></li>
                 </ul>
             </nav>
         </header>
         
-        <!-- Script para deshabilitar textarea de condición si el tipo de inscripción no es condicional-->
-        <script  type="text/javascript">
-		function enableElements() {
-		    if ($("#tipo_Inscripcion").val() == 'condicional') {
-		        $("#condicion_Inscripcion").removeAttr('disabled');
-		    	document.getElementById("condicion_Inscripcion").style.background = "#F3F3F3";
-		    }    
-		     
-		    if ($("#tipo_Inscripcion").val() == 'estandar' || $("#tipo_Inscripcion").val() == 'solidaria') {
-		        $("#condicion_Inscripcion").prop('disabled', true);
-		    	document.getElementById("condicion_Inscripcion").style.background = "#fafafa";
-		    }
-		};
-		</script>
-		        
-        
-        <!--SECCION Home-->
         <article id=anchor2 class="content light">
-        	<header class="title one">Inscripción</header>
+        	<header class="title one">Calificaciones</header>
             <div class="spacer"></div>
-            <div class="title two">Complete los datos para la inscripción</div>
+            <div class="title two">Elija un partido jugado y califique a sus jugadores!</div>
             <div class="form_insc  dontHide" align="center">
             	<form method="post" id="contact" class="peThemeContactForm" action="" >
                     <div id="personal" class="bay form-horizontal">
                         <div class="control-group"><!--partido field-->
                             <div class="controls">
                             	Partido<br>
-		                    	<label>
-								    <select id="partido_Inscripcion" name="partido_Inscripcion">
-								        <option selected>10/11/2014 22:00 - Sede Palermo</option>
-								        <option>10/12/2014 19:00 - Sede Almagro</option>
-								        <option>22/12/2014 21:00 - Sede Villa Lugano</option>
-								        <option>27/12/2014 22:00 - Sede Flores</option>
-								    </select>
-								</label>                                
-                        	</div>
+                                <label>
+                                    <select id="partido_Jugado" name="partido_Jugado">
+                                        <option selected>10/11/2014 22:00 - Sede Palermo</option>
+                                        <option>10/12/2014 19:00 - Sede Almagro</option>
+                                        <option>22/12/2014 21:00 - Sede Villa Lugano</option>
+                                        <option>27/12/2014 22:00 - Sede Flores</option>
+                                    </select>
+                                </label>                                
+                            </div>
                         </div>
                         <div class="control-group"><!--name field-->
                             <div class="controls">
-                            	Tipo de Inscripción<br>
-		                    	<label>
-								    <select id="tipo_Inscripcion" name="tipo_Inscripcion" onchange="enableElements();">
-								        <option value="estandar">Estándar</option>
-								        <option value="solidaria">Solidaria</option>
-								        <option value="condicional">Condicional</option>
-								    </select>
-								</label>                                
-                        	</div>
+                            	Jugador<br>
+                                <label>
+                                    <select id="jugador" name="jugador" onchange="enableElements();">
+                                        <option value="jugador1">Ariel</option>
+                                        <option value="jugador2">Juan</option>
+                                        <option value="jugador3">Jose</option>
+                                        <option value="jugador4">Gustavo</option>
+                                        <option value="jugador5">Federico</option>
+                                        <option value="jugador6">Guillermo</option>
+                                        <option value="jugador7">Alan</option>
+                                        <option value="jugador8">Tomas</option>
+                                        <option value="jugador9">Sergio</option>
+                                    </select>
+                                </label>                                
+                            </div>
                         </div>                       
+    
+                        <div class="control-group"><!--partido field-->
+                            <div class="controls">
+                            	Puntaje<br>
+                                <label>
+                                    <select id="jugador_calificacion" name="jugador_calificacion">
+                                        <option selected>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </label>                                
+                            </div>
+                        </div>
+    
                         <div class="control-group"><!--message field -->
                             <div class="controls">
-                            	Condición
-                                <textarea id="condicion_Inscripcion" name="condicion_Inscripcion" disabled='disabled' rows="12" class="required span9" data-fieldid="2" style="background-color:#fafafa "></textarea>
+                            	Comentarios
+                                <textarea id="condicion_Inscripcion" name="condicion_Inscripcion" rows="12" class="required span9" data-fieldid="2" style="background-color:#fafafa "></textarea>
                             </div>
                         </div>       
                         <div class="control-group">
                             <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red">Aceptar inscripción</button>
+                                <button type="submit" class="contour-btn contour-btn30 red">Guardar calificación</button>
                             </div>
                         </div>
+                    
                     </div>
                     <div class="notifications">
                         <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Inscripción Exitosa</strong> </div>
+                            <strong>Calificación Exitosa</strong> </div>
                         <div id="contactFormError" class="formError alert alert-error">
                             <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
                     </div>
@@ -223,3 +227,4 @@
     </body>
 
 </html>
+
